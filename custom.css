@@ -145,3 +145,27 @@ html:has(body#tt-body-page),body#tt-body-page{background:var(--my-post-bg)!impor
 .area-view .article-view h2{border-left-color:var(--my-accent)!important}
 .area-view .article-view p,.area-view .article-view li{font-size:var(--my-body-size);line-height:var(--my-body-line)}
 @media (max-width:760px){.th-title{font-size:calc(var(--my-title-size) - 6px)}}
+
+
+/* ===== 레이아웃 폭 (PC) ===== */
+:root{
+  --my-site-width:1200px;     /* 전체 폭 (헤더·본문) */
+  --my-main-width:880px;      /* 왼쪽 본문(글 목록·소개 박스) 폭 */
+  --my-aside-width:240px;     /* 오른쪽 사이드바(프로필) 폭 */
+  --my-aside-gap:48px;        /* 본문과 사이드바 사이 간격 */
+  --my-profile-img:88px;      /* 프로필 사진 크기 */
+}
+@media screen and (min-width:1061px){
+  main.main,.header .inner-header{max-width:var(--my-site-width)!important;width:var(--my-site-width)!important}
+  .area-main{max-width:var(--my-main-width)!important;width:var(--my-main-width)!important;flex:0 0 var(--my-main-width)}
+  .area-aside{width:var(--my-aside-width)!important;margin-left:var(--my-aside-gap)!important;flex:0 0 var(--my-aside-width)}
+  .area-aside .box-profile{width:var(--my-aside-width)!important;padding:0 16px 22px!important}
+  .box-profile .img-profile{width:var(--my-profile-img)!important;height:var(--my-profile-img)!important;margin:26px auto 10px!important}
+  .box-profile .img-profile img{width:100%!important;height:100%!important}
+  .box-profile .tit-g,.box-profile strong{font-size:15px!important}
+  .box-profile .text-profile,.box-profile p{font-size:13px!important}
+  .box-profile .tit-g{padding:0 8px!important;margin-bottom:6px!important;word-break:keep-all}
+  .box-profile .text-profile{margin-bottom:16px!important}
+  .box-profile .box-sns{margin:0!important}
+  .box-profile .btn-g{width:auto!important;min-width:0!important;padding:0 12px!important;height:36px!important;line-height:36px!important;font-size:13px!important}
+}
