@@ -151,7 +151,7 @@ html:has(body#tt-body-page),body#tt-body-page{background:var(--my-post-bg)!impor
 :root{
   --my-site-width:1200px;     /* 전체 폭 (헤더·본문) */
   --my-main-width:880px;      /* 왼쪽 본문(글 목록·소개 박스) 폭 */
-  --my-aside-width:240px;     /* 오른쪽 사이드바(프로필) 폭 */
+  --my-aside-width:260px;     /* 오른쪽 사이드바(프로필) 폭 */
   --my-aside-gap:48px;        /* 본문과 사이드바 사이 간격 */
   --my-profile-img:88px;      /* 프로필 사진 크기 */
 }
