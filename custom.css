@@ -169,3 +169,15 @@ html:has(body#tt-body-page),body#tt-body-page{background:var(--my-post-bg)!impor
   .box-profile .box-sns{margin:0!important}
   .box-profile .btn-g{width:auto!important;min-width:0!important;padding:0 12px!important;height:36px!important;line-height:36px!important;font-size:13px!important}
 }
+
+
+/* ===== 메인: 프로필 박스를 소개 박스와 높이·위치 맞춤 (PC) ===== */
+:root{
+  --my-top-height:310px;      /* 메인 소개 박스 = 프로필 박스 높이 */
+}
+@media screen and (min-width:1061px){
+  body.is-home .area-aside{margin-top:0!important}
+  body.is-home .th-hero{min-height:var(--my-top-height);box-sizing:border-box}
+  body.is-home .area-aside .box-profile{height:var(--my-top-height)!important;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:0 16px!important}
+  body.is-home .box-profile .img-profile{margin:0 auto 12px!important}
+}
